@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<schema version="0.3">
+    <table name="immo_annonces">         
+        <field name="id" type="I"><UNSIGNED/><KEY/><AUTOINCREMENT/></field>
+        <field name="type_transaction_id" type="I"><UNSIGNED/><NOTNULL/></field>
+        <field name="type_bien_id" type="I"><UNSIGNED/><NOTNULL/></field>
+        <field name="year" type="I"><UNSIGNED/><NOTNULL/></field>
+        <field name="name" type="C" size="255"><NOTNULL/></field>
+        <field name="description" type="X"></field>
+        <field name="photo_fID" type="I"><UNSIGNED/></field>
+        <field name="price" type="F"></field>               
+    </table>
+    <table name="immo_type_transactions">
+        <field name="id" type="I"><UNSIGNED/><KEY/><AUTOINCREMENT/></field>
+        <field name="name" type="C" size="255"><NOTNULL/></field>
+        <field name="url_slug" type="C" size="255"><NOTNULL/></field>
+        <field name="display_order" type="I"><UNSIGNED/><NOTNULL/></field>
+    </table>
+</schema>
